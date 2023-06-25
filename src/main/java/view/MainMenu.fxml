@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="30" style="-fx-background-image: url('view/BackGround.png');             -fx-background-size: cover;             -fx-background-repeat: no-repeat;             -fx-background-position: center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainMenuController">
+    <Text style="-fx-font: 32 arial; -fx-fill: #FFFFFF; -fx-stroke: #000000; -fx-stroke-width: 1px;" text="Welcome to Scrabble Game!">
+    </Text>
+    <Button fx:id="HostGameButton" minWidth="300" onAction="#showHostWaitingRoom" style="-fx-font: 24 arial; -fx-font-weight: bold; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-stroke: #000000; -fx-stroke-width: 1px;" styleClass="menu-button" text="Start Game As Host">
+    </Button>
+   <Button fx:id="HostGameButton1" minWidth="300" onAction="#showGuestWaitingRoom" style="-fx-font: 24 arial; -fx-font-weight: bold; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-stroke: #000000; -fx-stroke-width: 1px;" styleClass="menu-button" text="Join As Guest" />
+    <Button fx:id="helpButton" minWidth="300" onAction="#showHelp" style="-fx-font: 24 arial; -fx-font-weight: bold; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-stroke: #000000; -fx-stroke-width: 1px;" styleClass="menu-button" text="Help">
+    </Button>
+    <Button fx:id="statsButton" minWidth="300" onAction="#showStatistics" style="-fx-font: 24 arial; -fx-font-weight: bold; -fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-stroke: #000000; -fx-stroke-width: 1px;" styleClass="menu-button" text="Show Statistics">
+    </Button>
+</VBox>
